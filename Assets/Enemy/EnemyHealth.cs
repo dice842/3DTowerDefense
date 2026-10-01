@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -19,7 +16,7 @@ public class EnemyHealth : MonoBehaviour
     private void Damaged()
     {
         currentHp--;
-        if (currentHp < 0)
+        if (currentHp <= 0)
             Destroy(gameObject);
     }
 }

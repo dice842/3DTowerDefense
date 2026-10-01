@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 [ExecuteAlways]
 public class CoordinateLabeler : MonoBehaviour
@@ -14,7 +10,7 @@ public class CoordinateLabeler : MonoBehaviour
     TextMeshPro label;
     Vector2Int coordinates = new Vector2Int();
     Waypoint waypoint;
-    // Start is called before the first frame update
+
     void Start()
     {
         label = GetComponent<TextMeshPro>();
